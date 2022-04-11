@@ -54,3 +54,9 @@ print(ypredict)
 print(metrics.classification_report(y_test,ypredict))
 
 accuracy_score(y_test, ypredict)
+
+import matplotlib.pyplot as plt
+from collections import Counter
+hate_frequency = Counter(y)
+plt.bar(hate_frequency.keys(), hate_frequency.values())
+plt.show()
